@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import LibManage from "../../Assets/Projects/LibManage.png";
+import SpaceInvaders from "../../Assets/Projects/SpaceInvaders.png";
+
+import EMS from "../../Assets/Projects/EMS.png";
+
+import iNoteBook from "../../Assets/Projects/iNoteBook.png";
 
 function Projects() {
   return (
@@ -23,10 +23,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={iNoteBook}
               isBlog={false}
               title="iNote-Book"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="This is iNotebook, an application that allows users to store, edit, and delete notes securely. The backend is built with Express and MongoDB, while the frontend is powered by React.js and Node.js. iNotebook ensures personalized note management for every user, offering a seamless and efficient experience."
               ghLink="https://github.com/Soumadip-cmd/iNote-Book"
               demoLink="https://i-note-book-frontend-theta.vercel.app/"
             />
@@ -34,10 +34,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={EMS}
               isBlog={false}
               title="Employee Management System"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="I'm developing a full-stack employee management system with robust security, ensuring only admins have access. Admins can easily manage all employees, view department details, track staff numbers by department, handle leave requests, and manage the salary records for each employee, including tracking and processing payments."
               ghLink="https://github.com/Soumadip-cmd/Employee--Management-"
               demoLink="https://employee-management-sb5z.vercel.app/"
             />
@@ -45,10 +45,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={LibManage}
               isBlog={false}
               title="Library Management BOT"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="I developed a library management bot using C programming. The bot tracks each student by their roll number and analyzes their initial book choices over three days. If a student regularly chooses adventure books, the bot suggests similar titles, helping users find the perfect book tailored to their preferences."
               ghLink="https://github.com/Soumadip-cmd/Library-Management-System"
               demoLink="https://github.com/Soumadip-cmd/Library-Management-System"              
             />
@@ -56,37 +56,16 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={SpaceInvaders}
               isBlog={false}
               title="Space Invaders Game"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              description="I developed a Space Invaders game using Pygame, featuring sound effects, pause, play, and exit options. The game tracks and saves high scores, allowing players to compete against their best performances. This classic arcade game experience combines engaging gameplay with modern features for enhanced user interaction and enjoyment."
               ghLink="https://github.com/Soumadip-cmd/Space-Invaders-Game"
               demoLink="https://github.com/Soumadip-cmd/Space-Invaders-Game"
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-             
-            />
-          </Col> */}
+         
         </Row>
       </Container>
     </Container>

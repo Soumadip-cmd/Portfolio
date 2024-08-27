@@ -734,15 +734,16 @@ button:focus {
   vertical-align: middle !important;
   text-align: center !important;
   color: black !important;
-  font-weight: 500 !important;
+  /* font-weight: 500 !important; */
   border-radius: 205px !important;
+   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
 
   background-color: #3fbd8b !important;
-  font-weight: 600 !important;
+  /* font-weight: 600 !important; */
   color: black !important;
   border-color: #3fbd8b !important;
 }

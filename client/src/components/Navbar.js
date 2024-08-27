@@ -108,7 +108,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn" >
               <Button
-                href="https://github.com/Soumadip-cmd"
+                href='http://localhost:3000/contact'
                 target="_blank"
                 className="fork-btn-inner"
                 style={{color:'black'}}

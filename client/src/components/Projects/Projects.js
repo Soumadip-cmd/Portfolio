@@ -8,6 +8,7 @@ import SpaceInvaders from "../../Assets/Projects/SpaceInvaders.png";
 import EMS from "../../Assets/Projects/EMS.png";
 
 import iNoteBook from "../../Assets/Projects/iNoteBook.png";
+import LMS from "../../Assets/Projects/LMS.png";
 
 function Projects() {
   return (
@@ -21,6 +22,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LMS}
+              isBlog={false}
+              title="Learning Management System "
+              description="This is a production-level Learning Management System (LMS) using Next.js and TypeScript, hosted on AWS with robust security measures. The backend is optimized with Redis for efficient cache management, ensuring fast and reliable performance. This LMS offers a seamless, secure, and scalable solution for managing educational content."
+              ghLink="http://localhost:3000/project"
+              demoLink="http://localhost:3000/project"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={iNoteBook}
